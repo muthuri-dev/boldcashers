@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="https://cashchatapp.com/assets/images/favicon.png" type="image/png" sizes="180x180">
+    <title>Buy | Voucher</title>
+    <style type="text/css">
+        body {
+            background-color: purple;
+        }
+
+        .child {
+            margin: 0 auto;
+            max-width: 450px;
+            padding: 20px;
+            background-color: white;
+            /*border: 2px solid purple;*/
+            color: purple;
+            font-weight: bold;
+        }
+
+        /* Style the tab content */
+
+        .tabcontent {
+            display: none;
+        }
+
+        #btn {
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: purple;
+        }
+
+        .flex-container {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .flex-container>div {
+            width: 30%;
+            text-align: center;
+            line-height: 20px;
+            font-size: 30px;
+        }
+
+        .flex-tab {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .flex-tab>div {
+            width: 50%;
+            text-align: center;
+            margin: 10px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .flex-pck {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .flex-pck>div {
+            width: 50%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .flex-cvvexp {
+            display: flex;
+            flex-wrap: nowrap;
+        }
+
+        .flex-cvvexp>div {
+            width: 50%;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #inp {
+            width: 100%;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            text-align: center;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            background-color: purple;
+        }
+
+        img {
+            width: 100px;
+        }
+
+        .alert {
+            background-color: #FF0;
+            color: #fff;
+            padding: 10px;
+            padding-top: 10px;
+        }
+
+        .alertv {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px;
+            padding-top: 10px;
+        }
+    </style>
+</head>
+<!--/head-->
+
+<body>
+    <div class="child">
+
+        <div class="flex-container">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <br/><br/>
+
+        <div class='alertv'>
+            <strong>
+                    Buy an Advertising Voucher for CashChat. Please make sure you submit a valid email address. Your voucher will be sent to your email on successful transaction.
+                   </strong>
+        </div>
+
+
+        <br/><br/>
+        <div class="flex-tab">
+            <div><input type="radio" class="tablinks" onClick="openTab(event, 'mm')">PAY FROM MOBILE</input>
+            </div>
+            <div><input type="radio" class="tablinks" onClick="openTab(event, 'bb')">PAY FROM BANK</input>
+            </div>
+        </div>
+
+
+        <div id="mm" class="tabcontent">
+            <div>
+                <form method="post" action="https://my.cashchatapp.com/account/voucher">
+                    <input type="hidden" name="_token" value="E9rCnGFONKWoVfEV1vG39E99zBSFK9O9uA9JtBMY">
+                    <hr />
+                    <lable id="lbl">Package</lable><br/><br/>
+                    <select id="inp" type="text" name="package" required>
+                            <option value="1">For 12 hours (3 USD)</option>
+                            <option value="2">For a week (30 USD)</option>
+                            <option value="3">For a month (200 USD)</option>
+                        </select><br/><br/>
+                    <lable id="lbl">Mobile Money Number</lable><br/><br/>
+                    <input id="inp" type="text" name="phone" placeholder="e.g. 254756070599" required /><br/><br/>
+                    <lable id="lbl">Email</lable><br/><br/>
+                    <input id="inp" type="email" name="email" required /><br/><br/>
+                    <hr />
+                    <input id="btn" type="submit" name="payfrommobile" value="PROCEED" />
+                </form>
+            </div>
+        </div>
+        <div id="bb" class="tabcontent">
+            <div>
+                <div>
+                    <form method="post" action="https://my.cashchatapp.com/account/advoucher">
+
+                        <input type="hidden" name="_token" value="E9rCnGFONKWoVfEV1vG39E99zBSFK9O9uA9JtBMY">
+                        <hr />
+
+                        <lable id="lbl">Full Name</lable><br/><br/>
+                        <input id="inp" type="text" name="fullname" required /><br/><br/>
+                        <lable id="lbl">Email</lable><br/><br/>
+                        <input id="inp" type="email" name="email" required /><br/><br/>
+                        <lable id="lbl">Card Number</lable><br/><br/>
+                        <input id="inp" type="text" name="cardnumber" required /><br/><br/>
+                        <div class="flex-cvvexp">
+                            <div>
+                                <lable id="lbl">Expiry Date</lable><br/><br/>
+                                <input id="inp" type="text" name="expirydate" required /><br/><br/>
+                            </div>
+                            <div>
+                                <lable id="lbl">CVV</lable><br/><br/>
+                                <input id="inp" type="text" name="cvv" required /><br/><br/>
+                            </div>
+                        </div>
+                        <div class="flex-pck">
+                            <div>
+                                <lable id="lbl">Currency</lable><br/><br/>
+                                <select id="inp" type="text" name="currency" required>
+                                        <option>UGX</option>
+                                        <option>KES</option>
+                                        <option>USD</option>
+                                    </select><br/><br/>
+                            </div>
+                            <div>
+                                <lable id="lbl">Package</lable><br/><br/>
+                                <select id="inp" type="text" name="package" required>
+                                        <option value="1">For 12 hours (3 USD)</option>
+                                        <option value="2">For a week (30 USD)</option>
+                                        <option value="3">For a month (200 USD)</option>
+                                    </select><br/><br/>
+                            </div>
+                        </div>
+                        <hr />
+                        <input id="btn" type="submit" name="payfrombank" value="PROCEED" />
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openTab(evt, tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(tabName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+    </script>
+</body>
+
+</html>

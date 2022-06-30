@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="https://cashchatapp.com/assets/images/favicon.png" type="image/png" sizes="180x180">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="pidxydisenTlk0IhjKPaHbpHcue7MGP6ZI68wG8q">
+
+    <!-- <title>BC</title> -->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="screen">
+    <link href="https://web.boldcashers.com/account/user/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://web.boldcashers.com/account/user/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://web.boldcashers.com/account/user/css/prettyPhoto.css" rel="stylesheet">
+    <link href="https://web.boldcashers.com/account/user/css/price-range.css" rel="stylesheet">
+    <link href="https://web.boldcashers.com/account/user/css/animate.css" rel="stylesheet">
+    <link href="https://web.boldcashers.com/account/user/css/main.css" rel="stylesheet">
+    <link href="https://web.boldcashers.com/account/user/css/responsive.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+<![endif]-->
+    <link rel="shortcut icon" href="images/ico/favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="../images/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="../images/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="../images/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="../images/ico/apple-touch-icon-57-precomposed.png">
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/rowreorder/1.2.5/css/rowReorder.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/responsive/2.2.3/css/responsive.dataTables.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.6.1/css/buttons.dataTables.min.css">
+
+
+    <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+    <script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/responsive/2.2.3/js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/rowreorder/1.2.5/js/dataTables.rowReorder.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+    <script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+
+    <style type="text/css">
+        /*.log-in{
+	max-width: 700PX;
+	width: auto;
+	height: auto;
+	margin: auto;
+	float: center;
+}*/
+        
+        .body {}
+        /*.child1 {
+	float: center;
+	width: auto;
+	height: auto;
+	text-align:justify; 
+	font-family: Verdana, Geneva, sans-serif; 
+	padding: 10px; 
+	margin-top: 10px;
+	margin-bottom: 10px;
+}*/
+        
+        .log-in {
+            max-width: 350px;
+            margin: auto;
+        }
+        
+        .body {}
+        
+        .child {
+            max-width: 350PX;
+            margin: auto;
+        }
+        
+        .child1 {
+            float: center;
+            width: auto;
+            height: auto;
+            text-align: justify;
+            border: 5px solid purple;
+            font-family: Verdana, Geneva, sans-serif;
+            padding: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        .heading1 {
+            display: block;
+            font-size: 24px;
+            color: #F00;
+            width: 100%;
+            text-align: center;
+            font-weight: bold;
+            padding: 5px;
+            font-family: Verdana, Geneva, sans-serif;
+            color: #262422;
+        }
+        /* Style the tab */
+        
+        div.tab {
+            overflow: hidden;
+            float: center;
+            max-width: 700PX;
+            margin: auto;
+            height: auto;
+            text-align: justify;
+            border: 5px solid purple;
+            font-family: Verdana, Geneva, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            padding-right: 10px;
+        }
+        
+        div.nonact {
+            overflow: hidden;
+            float: center;
+            max-width: 700PX;
+            margin: auto;
+            height: auto;
+            text-align: justify;
+            font-family: Verdana, Geneva, sans-serif;
+            font-weight: bold;
+            font-size: 24px;
+            padding-right: 10px;
+        }
+        /* Style the buttons inside the tab */
+        
+        div.tab button {
+            float: left;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            background-color: purple;
+            font-weight: bold;
+            font-size: 24px;
+            padding: 14px 16px;
+            transition: 0.3s;
+            font-size: 17px;
+        }
+        /* Change background color of buttons on hover */
+        
+        div.tab button:hover {
+            background-color: #FFFFFF;
+        }
+        /* Create an active/current tablink class */
+        
+        div.tab button.active {
+            background-color: #FFFFFF;
+        }
+        /* Style the tab content */
+        
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            border: 5px solid purple;
+            border-top: none;
+            max-width: 700PX;
+            margin: auto;
+        }
+        
+        button {
+            color: orange;
+            float: center;
+            font-family: verdana;
+            width: 100%;
+            padding: 10px;
+        }
+        
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        
+        th,
+        td {
+            text-align: left;
+            padding: 8px;
+            color: orange;
+        }
+        
+        tr:nth-child(even) {
+            background-color: #f2f2f2
+        }
+        
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+        
+        #invalid-feedback {
+            color: red;
+        }
+        
+        table.dataTable.dtr-inline.collapsed>tbody>tr>td:first-child:before,
+        table.dataTable.dtr-inline.collapsed>tbody>tr>th:first-child:before {
+            left: auto;
+            right: 4px;
+        }
+    </style>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124493515-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-124493515-1');
+    </script>
+
+</head>
+
+<body>
+    <div id="app">
+        <header id="header">
+            <!--header-->
+            <div class="header_top" style="background-color:purple;">
+                <!--header_top-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="contactinfo">
+                                <ul class="nav nav-pills">
+
+                                    <li><a style="color:#FFF;" href=""><i class="fa fa-envelope"></i> Kenya -
+                                            kesupport@cashchatapp.com | Uganda - ugsupport@cashchatapp.com | Rwanda -
+                                            rwsupport@cashchatapp.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <!--/header_top-->
+
+
+
+        </header>
+        <!--/header-->
+
+        <main class="py-4">
+
+            <head>
+                <title>Q&A </title>
+            </head>
+            <style>
+                .body {
+                    background: purple;
+                    margin: auto;
+                }
+                
+                .buttons {
+                    padding: 10px;
+                    font-size: 16px;
+                    color: #FFF;
+                    display: block;
+                    width: 100%;
+                    background-color: #4CAF50;
+                }
+            </style>
+            <section class="body">
+                <br /><br />
+
+
+                <div class="container">
+
+                    <div class="panel panel-default">
+                        <div>
+                            <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn12">
+                                <span class="badge pull-right"><i class="fa fa-plus"></i></span> Qn. How does cash chat pay per impression?
+                            </a>
+                        </div>
+                        <div id="qn12" class="panel-collapse collapse">
+                            <div class="panel-body" style="background-color:purple; color:#fff;">
+                                <strong>When an advertiser pays for the AD and it starts running on  timeline of all users targeted depending on the countries selected , how much advertiser paid and how long the AD runs. We make statistics with computations of how many users viewed the AD on your status/timeline based on 1,000 impressions or times viewed by different users, users who view the ADS on your status/timeline are unique each impressions is created by a unique user, it needs you to have many users in your contacts lists.<br><br>
+					
+					Below is the comparison of how to pay per impression or Views. The computations are done every month and earnings will be paid into your wallets of those who reached the threshold for earning from Advertising per impression. <br><br>
+					
+					Pay-Per-Impression
+					Pay-per-impression (PPI) is a compensation method that pays based on the number of impressions, or views, that an AD receives. From  the advertiser’s perspective, this is abbreviated CPM, which stands for cost-per-mille, or cost-per-thousand-impressions.<br><br>
+
+					This type of compensation model is used predominantly with display ADS, text ADS, video ADS, interactive ADS, and so forth. The pay rate varies, but is more widely known than the PPP compensation model, simply because there are so many more ADS that use PPI than PPP as a payment setup.<br><br>
+
+					As you may be able to guess, the advertiser pays out the AD network and the publisher each time an AD is viewed 1,000 times.<br><br>
+
+					The rate varies based on the specific type of AD and the industry. Video ADS can be over $10, while other types of display ADS average at a few dollars per thousand impressions. At the low end, you’ll be receiving a few cents; at the high end, you’ll be receiving a few dollars, but the rates never quite compare.<br><br>
+
+					We request everyone to be patient, this type of earning model is being implemented and not yet ready at the moment but once it's done everyone will be informed, we request everyone to invite many to use the CashChat App and have many contacts because they will be good for your impressions. Imagine you if we are paying $2 per 1,000 impressions and you have 100000 impressions? You would be making money. Let's make sure we have as many contacts and people in your contact list who are using CashChat, the more the following the more you are likely to earn.<br><br>
+
+					We kindly request you to be patient and don't send fake news because we shall block those who circulate false information.<br><br>
+
+					Note: We are still working on the new updated app for better quality performance, and we are still working on backoffiice for those who will qualify to be Agents. Good things take time.<br><br>
+					</strong>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="panel panel-default">
+                        <div>
+                            <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn1">
+                                <span class="badge pull-right"><i class="fa fa-plus"></i></span> Qn. What Services does CashChatApp provide if you may ask?
+                            </a>
+                        </div>
+                        <div id="qn1" class="panel-collapse collapse">
+                            <div class="panel-body" style="background-color:purple; color:#fff;">
+                                <strong>CashChatApp is a very unique platform which provides the following services:<br>
+					<ul>
+						<li>- Bill Payments.<br>Pay bills with ease at discounted prices.</li><br>
+						<li>- Mobile Money Funds Transfer. <br>Through CashChatApp you can send money to any
+							network
+							(MTN or Airtel in Uganda , MPESA in Kenya and MTN in Rwanda) at very minimal fees.
+							Wallet to
+						Wallet transfers are also avaible for CashChatApp Members in Uganda and Rwanda only</li><br>
+						<li>- Visa Payment platform. <br>Visa and master card transactions available at lower
+							rates.
+						</li><br>
+						<li>- CashChatApp has the following features
+							<br>-Messaging
+							<br>-Audio Sharing
+							<br>-Video sharing
+							<br>-Calling
+							<br>-Advertising etc....
+							<a href="https://play.google.com/store/apps/details?id=com.app.cashchat&hl=en" target="_blank">
+								Download Cash Chat here </a>
+						</li>
+						<br>
+						<li>- Membership Savings. <br>Save and earn an interest at every end of a financial
+						year. </li>
+						<br>
+					</ul>
+					<div class='alert alert-success' style="background-color:#F00; color:#fff;">
+						<strong>Register an account with CashChatApp for free. </strong> </div>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div>
+                        <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn2">
+                            <span class="badge pull-right"><i class="fa fa-plus"></i></span> Qn. Are there any commissions?
+                        </a>
+                    </div>
+                    <div id="qn2" class="panel-collapse collapse">
+                        <div class="panel-body" style="background-color:purple; color:#fff;">
+
+                            <strong>
+					- Through cash chat as an Advertising agent.
+					<iframe src="https://www.youtube.com/embed/ou5TpPiWIl8" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen></iframe>
+					Videos explaining how to use CashChat and earning from Advertising.
+					</strong>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="panel panel-default">
+                    <div>
+                        <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn6">
+                            <span class="badge pull-right"><i class="fa fa-plus"></i></span> Qn. How do i make payment?
+                        </a>
+                    </div>
+                    <div id="qn6" class="panel-collapse collapse">
+                        <div class="panel-body" style="background-color:purple; color:#fff;">
+                            <strong>To make payment using mobilemoney/mpesa.<br>
+					<ul>
+						<li>- Click Pay Subscription </a></li>
+						<li>- Select Pay from mobile tab</a></li>
+						<li>- Enter mobilemoney/mpesa number where the money will be deducted</li>
+						<li>- Click Make Payment</li>
+					</ul>
+					<div class='alert alert-success' style="background-color:#F00; color:#fff;">
+						<strong>You will recieve a notification on your mobile phone. Please confirm it inorder
+						to complete the transaction. Your account will be activated immediately.</strong>
+                        </div>
+                        </strong>
+                    </div>
+                    <div class="panel-body" style="background-color:purple; color:#fff;">
+                        <strong>To pay using visa<br>
+					<ul>
+						<li>- Click Pay Subscription > - Click Pay from
+						bank tab</a></li>
+						<li>- Enter your card details</li>
+						<li>- Click Proceed</li>
+					</ul>
+					<div class='alert alert-success' style="background-color:#F00; color:#fff;">
+						<strong>Your transaction will be confirmed instantly. You can proceed and activate your
+					account.</strong> </div>
+                    </strong>
+                </div>
+                <div class="panel-body" style="background-color:purple; color:#fff;">
+                    <strong>To pay from wallet<br>
+					<ul>
+						<li>- Click Pay Subscription </a></li>
+						<li>- Click Pay from wallet tab</li>
+						<li>- Click Make Payment</li>
+					</ul>
+					<div class='alert alert-success' style="background-color:#F00; color:#fff;">
+						<strong>The subscription fee will be deducted from you wallet balance and your account
+					will be activated instantly.</strong> </div>
+                </strong>
+    </div>
+    </div>
+    </div>
+    <div class="panel panel-default">
+        <div>
+            <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn7">
+                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                <strong>Qn. If i paid through the paybill number, how do i activate my account?</strong>
+            </a>
+        </div>
+        <div id="qn7" class="panel-collapse collapse">
+            <div class="panel-body" style="background-color:purple; color:#fff;">
+                <strong>If you have paid through our paybill number<br>
+					<ul>
+						<li>- Activate Account</a></li>
+						<li>- Enter your refernce code</li>
+						<li>- Click Submit</li>
+					</ul>
+					<img src="https://boldcashers.com/account/images/act2.PNG" width="300px">
+					<div class='alert alert-success' style="background-color:#F00; color:#fff;">
+					<strong>Your account will be activated immediately.</strong> </div>
+            </strong>
+        </div>
+    </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div>
+            <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn11">
+                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                <strong>Qn. Can i be able to transfer Money from Uganda or Rwanda through wallet to
+					wallet money tranfer? </strong>
+            </a>
+        </div>
+        <div id="qn11" class="panel-collapse collapse">
+            <div class="panel-body" style="background-color:purple; color:#fff;">
+                <strong>Yes, This service is only avilable in Uganda and Rwanda. Note exchange rate costs will be incured for this type of transaction.<br>
+					</strong>
+            </div>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div>
+            <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn15">
+                <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                <strong>Transaction Charges </strong>
+            </a>
+        </div>
+        <div id="qn15" class="panel-collapse collapse">
+            <div class="panel-body" style="background-color:purple; color:#fff;">
+
+                <div>
+                    <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn13">
+                        <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                        <strong>To Mobile </strong>
+                    </a>
+                </div>
+                <div id="qn13" class="panel-collapse collapse">
+                    <div class="panel-body" style="background-color:purple; color:#fff;">
+                        <strong>KES = 30 + (2% of amount to be withdrawn)
+                                                        <br />E.g If you are withdrawing 1000
+                                                        <br />Transaction charges are 30 + (1000*0.02) =   50
+                                                        <br /><br />RWF =  160 + (amount to be withdrawn*3%)
+                                                        <br />E.g If you are withdrawing 1000
+                                                        <br />Transaction charges are 160 + (1000*0.03) =   190
+                                                        <br /><br />UGX = 1500
+
+                                                    </strong>
+                    </div>
+                </div>
+
+                <div>
+                    <a class="buttons" data-toggle="collapse" data-parent="#accordian" href="#qn14">
+                        <span class="badge pull-right"><i class="fa fa-plus"></i></span>
+                        <strong>Wallet to Wallet </strong>
+                    </a>
+                </div>
+                <div id="qn14" class="panel-collapse collapse">
+                    <div class="panel-body" style="background-color:purple; color:#fff;">
+                        <strong>RWF = 150
+                                                    <br /><br />UGX = 600
+                                                    </strong>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </section>
+    <script src="https://web.boldcashers.com/account/user/js/jquery.js"></script>
+    <script src="https://web.boldcashers.com/account/user/js/price-range.js"></script>
+    <script src="https://web.boldcashers.com/account/user/js/bootstrap.min.js"></script>
+    <script src="https://web.boldcashers.com/account/user/js/jquery.prettyPhoto.js"></script>
+    <script src="https://web.boldcashers.com/account/user/js/main.js"></script>
+    <script src="https://web.boldcashers.com/account/user/js/dashbaord.js"></script>
+
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+
+    <script type="text/javascript">
+        $('#confirm-trxform').submit(function() {
+            $("#confirm-trxbtn", this)
+                .html("Please Wait...")
+                .attr('disabled', 'disabled');
+            return true;
+        });
+    </script>
+
+    </div>
+</body>
+
+</html>

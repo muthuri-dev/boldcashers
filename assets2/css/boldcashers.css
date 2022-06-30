@@ -1,0 +1,862 @@
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    /*******FONT SIZES*******/
+
+    .fs1 {
+        font-size: 3.6em;
+    }
+
+    .fs2 {
+        font-size: 3.1em;
+    }
+
+    .fs3 {
+        font-size: 2.6em;
+    }
+
+    .fs4 {
+        font-size: 2.1em;
+    }
+
+    .fs5 {
+        font-size: 1.6em;
+    }
+
+    .fs6 {
+        font-size: 1.1em;
+    }
+
+    .fssx {
+        font-size: 0.6em;
+    }
+
+    .fsp {
+        font-size: 1em;
+    }
+
+    /*******FONT SIZES*******/
+
+    nav li {
+        display: flex;
+        align-items: center;
+    }
+
+    a {
+        color: #ac4edd;
+    }
+
+    a :hover {
+        color: #ac4edd !important;
+    }
+
+    button {
+        outline: none;
+    }
+
+    .divsht {
+        width: 60%;
+        margin: auto;
+    }
+
+    .divsht50 {
+        width: 50%;
+        padding: 50px;
+        margin: auto;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+    }
+
+    .divsht60 {
+        width: 70%;
+        padding: 50px;
+        margin: auto;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+    }
+
+    .greenbtn {
+        background-color: #8CC63F;
+        color: white;
+        border: 2px solid #8CC63F;
+        transition: all ease .5s;
+        /* box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6); */
+        box-shadow: -10px 14px 46px -10px rgba(0, 0, 0, 0.3);
+    }
+
+    .greenbtn:hover {
+        background-color: transparent;
+        color: grey;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1);
+    }
+
+    .greenbtnr {
+        background-color: #8CC63F;
+        color: white;
+        border: 2px solid #8CC63F;
+        transition: all ease .5s;
+    }
+
+    .greenbtnr:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+    .purplebtnr {
+        background-color: #800080;
+        color: white;
+        border: 2px solid #800080;
+        transition: all ease .5s;
+    }
+
+    .purplebtnr:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+    .purplebtn {
+        background-color: #800080;
+        color: white;
+        border: 2px solid #800080;
+        transition: all ease .5s;
+        box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+    }
+
+    .purplebtn:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+    .howitworks {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/oze.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        clip-path: polygon(50% 0%, 100% 0, 100% 75%, 50% 100%, 0% 75%, 0 0);
+        padding-top: 100px;
+        color: whitesmoke;
+    }
+
+    /***************THE SCROLLBAR STYLES*****************/
+
+    ::-webkit-scrollbar {
+        width: 9px;
+    }
+
+    /* Track */
+
+    ::-webkit-scrollbar-track {
+        background: #eeeeee
+    }
+
+    /* Handle */
+
+    ::-webkit-scrollbar-thumb {
+        background: #800080;
+    }
+
+    /* Handle on hover */
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #800080;
+    }
+
+    /***************THE SCROLLBAR STYLES*****************/
+
+    .btn {
+        border-radius: 50px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .ccbg1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('../images/women-sitting-on-a-couch-3894375.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        height: 100vh;
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .ccbg1>div {
+        color: whitesmoke;
+        /* padding: 0; */
+    }
+
+    .btnlist {
+        display: flex;
+    }
+
+    .ccbg2 {
+        padding: 0px 0px;
+        background-color: honeydew;
+    }
+
+    .features,
+    .how_features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .features>div,
+    .how_features>div {
+        background-color: #800080;
+        height: 500px;
+        color: whitesmoke;
+    }
+
+    .how_features>div {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .features>div:first-child,
+    .features>div:nth-child(4),
+    .features>div:nth-child(5) {
+        padding: 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .features>div img {
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .features>div p {
+        color: grey;
+    }
+
+    .ccbg3 {
+        background-color: #eeeeee;
+        padding: 100px 0px;
+    }
+
+    .ccbg4 {
+        /* background-color: #eeeeee; */
+        padding: 100px 0px;
+    }
+
+    .ccbg4>div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /****LOGIN STYLES****/
+
+    .loginccbg1 {
+        height: 100%;
+        padding: 100px 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    .loginccbg1>div {
+        background: #fefefe;
+        border-radius: 10px;
+    }
+
+    .loginccbg1>div>div {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .loginccbg1 input {
+        border-radius: 10px;
+    }
+
+    .loginccbg1 input:focus {
+        outline-style: none;
+    }
+
+    .loginccbg1 button {
+        border-radius: 10px !important;
+        background-color: #800080;
+        border: 2px solid #800080;
+        color: whitesmoke
+    }
+
+    .loginccbg1 button:hover {
+        background-color: transparent;
+        color: black;
+    }
+
+    /****LOGIN STYLES****/
+
+    /****DOWNLOAD STYLES****/
+
+    .developers_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .developers_grid>div {
+        background-color: #eeeeee;
+        height: 300px;
+        padding: 50px;
+        /* border-bottom: 5px solid #800080; */
+        border-radius: 5px;
+    }
+
+    /****DOWNLOAD STYLES****/
+
+    /****BUSINESS STYLES****/
+
+    .bussinessccbg1 {
+        background-image: url('../images/business.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+    }
+
+    /****BUSINESS STYLES****/
+
+    /****FEATURES STYLES****/
+
+    .featuresccbg2 {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 10px;
+    }
+
+    .featuresccbg2>div {
+        background-color: #eeeeee;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px 50px;
+    }
+
+    .featuresccbg2>div:first-child {
+        background-color: #f1e2e2;
+    }
+
+    .featuresccbg2>div:nth-child(2) {
+        background-color: #d8def7;
+    }
+
+    .featuresccbg2>div:nth-child(3) {
+        background-color: #e3f7d8;
+        padding: 50px 50px;
+    }
+
+    .featuresccbg2>div:nth-child(4) {
+        background-color: #f7e6d8;
+        padding-bottom: 0px;
+    }
+
+    .featuresccbg2>div:nth-child(5) {
+        background-color: #d8def7;
+        padding-top: 0px;
+    }
+
+    .featuresccbg2>div:nth-child(6) {
+        background-color: #ddf7d8;
+        padding-bottom: 0px;
+    }
+
+    /****FEATURES STYLES****/
+
+    .footer1 {
+        background-color: rgb(70, 4, 70);
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    .footer1 ul li {
+        list-style: none;
+    }
+
+    .footer1 ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+    }
+
+    .footer1 ul li a:hover {
+        text-decoration: none;
+        color: grey;
+    }
+
+    .footer1 p {
+        color: white;
+        font-weight: bold;
+    }
+
+    .footer2 {
+        background-color: rgb(41, 2, 41);
+        color: whitesmoke;
+        padding-top: 20px;
+        padding-bottom: 0px;
+    }
+
+    /*##Device = Laptops, Desktops##Screen = B/w 1025px to 1280px*/
+
+    @media (min-width: 1281px) {}
+
+    /*##Device = Laptops, Desktops##Screen = B/w 1025px to 1280px*/
+
+    @media (min-width: 1025px) and (max-width: 1280px) {}
+
+    /*##Device = Tablets, Ipads (portrait)##Screen = B/w 768px to 1024px*/
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        /**HOME  PAGE**/
+        .ccbg1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../images/women-sitting-on-a-couch-3894375.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 200px;
+            padding-bottom: 0px;
+        }
+        .features,
+        .how_features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        .how_features>div {
+            background-color: #800080;
+            height: 100%;
+            color: whitesmoke;
+            padding: 50px 20px;
+            border: 1px solid #e906e9;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .features>div:nth-child(2),
+        .features>div:nth-child(3),
+        .features>div:nth-child(6) {
+            background-color: #800080;
+            height: 500px;
+            color: whitesmoke;
+        }
+        .features>div:first-child,
+        .features>div:nth-child(4),
+        .features>div:nth-child(5) {
+            text-align: center;
+            height: 500px;
+            color: whitesmoke;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .features>div img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .ccbg3 {
+            text-align: center;
+        }
+        /**HOME  PAGE**/
+        /***LOGIN PAGE**/
+        .divsht50 {
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+        }
+        .divsht60 {
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+        }
+        .loginccbg1 {
+            height: 100%;
+            padding: 150px 30px;
+            display: flex;
+            align-items: center;
+        }
+        /***LOGIN PAGE**/
+        .developers_grid>div {
+            padding: 20px;
+        }
+    }
+
+    /*##Device = Tablets, Ipads (landscape)##Screen = B/w 768px to 1024px*/
+
+    @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+        /**HOME  PAGE**/
+        .ccbg1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../images/women-sitting-on-a-couch-3894375.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 0px;
+        }
+        .features,
+        .how_features {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        .how_features>div {
+            background-color: #800080;
+            height: 100%;
+            color: whitesmoke;
+            padding: 50px 20px;
+            border: 1px solid #e906e9;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .features>div:nth-child(2),
+        .features>div:nth-child(3),
+        .features>div:nth-child(6) {
+            background-color: #800080;
+            height: 500px;
+            color: whitesmoke;
+        }
+        .features>div:first-child,
+        .features>div:nth-child(4),
+        .features>div:nth-child(5) {
+            text-align: center;
+            height: 500px;
+            color: whitesmoke;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .features>div img {
+            height: 500px;
+            object-fit: cover;
+        }
+        .ccbg3 {
+            text-align: center;
+        }
+        /**HOME  PAGE**/
+        /***LOGIN PAGE**/
+        .divsht50 {
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+        }
+        .divsht60 {
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+        }
+        .loginccbg1 {
+            height: 100%;
+            padding: 50px 0px;
+            display: flex;
+            align-items: center;
+        }
+        /***LOGIN PAGE**/
+        /*******FONT SIZES*******/
+        .fs1 {
+            font-size: 2.8em;
+        }
+        .fs2 {
+            font-size: 2.3em;
+        }
+        .fs3 {
+            font-size: 1.8em;
+        }
+        .fs4 {
+            font-size: 1.5em;
+        }
+        .fs5 {
+            font-size: 1.4em;
+        }
+        .fs6 {
+            font-size: 0.9em;
+        }
+        .fssx {
+            font-size: 0.5em;
+        }
+        .fsp {
+            font-size: 0.8em;
+        }
+        /*******FONT SIZES*******/
+        .only_desktop {
+            display: none;
+        }
+    }
+
+    /*##Device = Low Resolution Tablets, Mobiles (Landscape) ##Screen = B/w 481px to 767px*/
+
+    @media (min-width: 481px) and (max-width: 767px) {
+        /**HOME  PAGE**/
+        .ccbg1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../images/women-sitting-on-a-couch-3894375.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 0px;
+        }
+        .features,
+        .how_features {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        .how_features>div {
+            background-color: #800080;
+            height: 100%;
+            color: whitesmoke;
+            padding: 50px 20px;
+            border: 1px solid #e906e9;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .features>div:nth-child(2),
+        .features>div:nth-child(3),
+        .features>div:nth-child(6) {
+            background-color: #800080;
+            height: 300px;
+            color: whitesmoke;
+        }
+        .features>div:first-child,
+        .features>div:nth-child(4),
+        .features>div:nth-child(5) {
+            text-align: center;
+            height: 500px;
+            color: whitesmoke;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+        }
+        .features>div img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .ccbg3 {
+            text-align: center;
+        }
+        .ccbg3 img {
+            margin-top: 30px;
+        }
+        /**HOME  PAGE**/
+        /***FEATURES PAGE**/
+        .featuresccbg2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        /***FEATURES PAGE**/
+        /***LOGIN PAGE**/
+        .divsht50 {
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+        }
+        .divsht60 {
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+        }
+        .loginccbg1 {
+            height: 100%;
+            padding: 50px 0px;
+            display: flex;
+            align-items: center;
+        }
+        /***LOGIN PAGE**/
+        /*******FONT SIZES*******/
+        .fs1 {
+            font-size: 2.8em;
+        }
+        .fs2 {
+            font-size: 2.3em;
+        }
+        .fs3 {
+            font-size: 1.8em;
+        }
+        .fs4 {
+            font-size: 1.5em;
+        }
+        .fs5 {
+            font-size: 1.4em;
+        }
+        .fs6 {
+            font-size: 0.9em;
+        }
+        .fssx {
+            font-size: 0.5em;
+        }
+        .fsp {
+            font-size: 0.8em;
+        }
+        /*******FONT SIZES*******/
+        .only_desktop {
+            display: none;
+        }
+    }
+
+    /*##Device = Most of the Smartphones Mobiles (Portrait) ##Screen = B/w 320px to 479px*/
+
+    @media (min-width: 320px) and (max-width: 480px) {
+        /**HOME  PAGE**/
+        .ccbg1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8)), url('../images/women-sitting-on-a-couch-3894375.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            padding-top: 100px;
+            padding-bottom: 0px;
+        }
+        .features,
+        .how_features {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        .how_features>div {
+            background-color: #800080;
+            height: 100%;
+            color: whitesmoke;
+            padding: 50px 20px;
+            border: 1px solid #e906e9;
+            text-align: center;
+            display: flex;
+            align-items: center;
+        }
+        .features>div:nth-child(2),
+        .features>div:nth-child(3),
+        .features>div:nth-child(6) {
+            background-color: #800080;
+            height: 300px;
+            color: whitesmoke;
+        }
+        .features>div:first-child,
+        .features>div:nth-child(4),
+        .features>div:nth-child(5) {
+            text-align: center;
+            height: 100%;
+            color: whitesmoke;
+            padding: 30px 10px 20px 10px;
+            display: flex;
+            align-items: center;
+            border: 1px solid #8f038f;
+        }
+        .features>div img {
+            height: 300px;
+            object-fit: cover;
+        }
+        .ccbg3 {
+            text-align: center;
+        }
+        .ccbg3 img {
+            margin-top: 30px;
+        }
+        .developers_grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+            margin-bottom: 10px;
+        }
+        .divsht {
+            width: 95%;
+            margin: auto;
+        }
+        /**HOME  PAGE**/
+        /**DOWNLOAD  PAGE**/
+        .downloadccbg1 img {
+            width: 100%;
+        }
+        /**DOWNLOAD  PAGE**/
+        /***FEATURES PAGE**/
+        .featuresccbg2 {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 10px;
+        }
+        /***FEATURES PAGE**/
+        /***LOGIN PAGE**/
+        .divsht50 {
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+        }
+        .divsht60 {
+            width: 95%;
+            padding: 20px;
+            margin: auto;
+            box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.1), 0px 4px 4px 0px rgba(0, 0, 0, 0.15), 0px 2px 2px 0px rgba(0, 0, 0, 0.6);
+        }
+        .loginccbg1 {
+            height: 100%;
+            padding: 50px 0px;
+            display: flex;
+            align-items: center;
+        }
+        /***LOGIN PAGE**/
+        /****BUSINESS STYLES****/
+        .bussinessccbg1 {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/business.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: right;
+            height: 100%;
+            padding: 150px 0px 50px 0px;
+            color: whitesmoke;
+            text-align: center;
+        }
+        /****BUSINESS STYLES****/
+        /*******FONT SIZES*******/
+        .fs1 {
+            font-size: 2.8em;
+        }
+        .fs2 {
+            font-size: 2.3em;
+        }
+        .fs3 {
+            font-size: 1.8em;
+        }
+        .fs4 {
+            font-size: 1.5em;
+        }
+        .fs5 {
+            font-size: 1.4em;
+        }
+        .fs6 {
+            font-size: 0.9em;
+        }
+        .fssx {
+            font-size: 0.5em;
+        }
+        .fsp {
+            font-size: 0.8em;
+        }
+        /*******FONT SIZES*******/
+        .only_desktop {
+            display: none;
+        }
+    }
+
+    /** MEDIA ENDS HERE***/

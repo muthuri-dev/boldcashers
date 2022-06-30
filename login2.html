@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Mirrored from bootstraplovers.com/themeforest-html/ultima-v1.2/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Feb 2017 12:41:06 GMT -->
+
+<head>
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="plugins/ionicons/css/ionicons.min.css" rel="stylesheet">
+    <title>Cash Chat</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="plugins/materialize/css/materialize.min.css" media="screen" />
+    <link href='plugins/fullcalendar/fullcalendar.css' rel="stylesheet">
+    <!--Template style-->
+    <link href="css2/style.css" rel="stylesheet">
+    <script type="text/javascript" src="angular/angular.min.js"></script>
+</head>
+
+<body>
+    <!-- end preloader-->
+    <div class="display-table teal">
+        <div class="vertical-middle">
+            <div class="container">
+                <div class="row margin-b-0">
+                    <div class="col s12 l4 offset-l4">
+                        <div class="card margin-b-0">
+                            <div class="card-content">
+                                <span class="card-title center-align">Cash Chat Admin Login</span>
+                                <div class="row" ng-app="ZoeChatlogin" ng-controller="loginCtrl">
+                                    <form class="col s12 margin-b-0" ng-submit="login(data)">
+                                        <div class="input-field col s12">
+                                            <input id="username" type="text" class="validate" ng-model="data.username">
+                                            <label for="username" class="">Username</label>
+                                        </div>
+                                        <div class="input-field col s12 margin-b-20">
+                                            <input id="password" type="password" class="validate" ng-model="data.password">
+                                            <label for="password">Password</label>
+                                        </div>
+                                        <div class="center">
+                                            <p class="red-text" style="text-align: center;">{{error}}</p>
+                                        </div>
+                                        <div class="col s12 right-align margin-b-20">
+                                            <button type="submit" class="waves-effect waves-light btn teal btn-block">sign in</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="plugins/materialize/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script>
+        var app = angular.module("ZoeChatlogin", []);
+        app.controller('loginCtrl', function($scope, $http, $rootScope) {
+            $scope.login = function(data) {
+                var baseIpUrl = "https://web.cashchatapp.com/";
+                var credentials = {};
+                credentials.username = data.username;
+                credentials.password = data.password;
+                $http.post(baseIpUrl + "admin/login", credentials).then(function(response) {
+                    if (response.data.error == false) {
+                        var encrypt = data.username + '.' + data.password;
+                        console.log(encrypt);
+                        sessionStorage.setItem("access_token", encrypt);
+                        sessionStorage.setItem("ekul", response.data.doc[0].role);
+                        sessionStorage.setItem("admin_name", data.username);
+                        if (response.data.doc[0].role == 'subadmin') {
+                            window.location.href = baseIpUrl + "#!/userads";
+                        } else {
+                            window.location.href = baseIpUrl;
+                        }
+
+                    } else {
+                        $scope.error = response.data.message;
+                    }
+                });
+
+            }
+        });
+    </script>
+</body>
+
+<!-- Mirrored from bootstraplovers.com/themeforest-html/ultima-v1.2/page-login.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 01 Feb 2017 12:41:06 GMT -->
+
+</html>
+<!-- <script src = "/socket.io/socket.io.js"></script>
+<script type="text/javascript">
+    let socket = io.connect(); 
+    socket.on('connect', () => {
+        console.log(socket); // an alphanumeric id...
+        socket.emit('justtestemit', {"name":"John Doe"});
+    }); 
+</script> -->
